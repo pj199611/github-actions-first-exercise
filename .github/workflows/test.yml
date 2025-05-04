@@ -11,12 +11,12 @@ jobs:
         with:
           node-version: 22
       - name: Install dependencies
-        uses: npm ci
+        run: npm ci
       - name: lint project
-        uses: npm lint
+        run: npm lint
       - name: test
-        uses: npm run test
+        run: npm run test
       - name: Build Project
-        uses: npm build
+        run: npm build
       - name: Deploying the project
         run: echo "deploying to aws ....."
