@@ -15,7 +15,7 @@ jobs:
       - name: lint project
         uses: npm lint
       - name: test
-        uses: npm test
+        uses: npm run test
       - name: Build Project
         uses: npm build
       - name: Deploying the project
